@@ -1,4 +1,9 @@
 NineNineCats::Application.routes.draw do
+  resources :users
+  resources :cats
+  resources :cat_rental_requests
+  resource :session
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
