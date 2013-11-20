@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= button_to "Log Out", session_url, method: :delete %>
   <% if flash[:notice] ; p flash%>
   <ul>
   <% flash[:notice].each do |k,v| %>

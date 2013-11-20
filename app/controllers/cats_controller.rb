@@ -26,7 +26,7 @@ class CatsController < ApplicationController
   end
 
   def index
-    @cats = Cats.all
+    @cats = Cat.all
   end
 
   def destroy
