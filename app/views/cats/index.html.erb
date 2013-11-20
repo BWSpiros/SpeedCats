@@ -1,0 +1,13 @@
+<h1>Cat's for Everyone!'</h1>
+<ul>
+  <% @cats.each do |cat| %>
+  <li><%= link_to cat.name, cat_url(cat.id) %>
+    <ul>
+      <li>
+        <%= "#{cat.age} year(s) old, #{cat.color} fur, and #{cat.sex = "M" ? "male" : "female"}" %>
+      </li>
+    </ul>
+  </li>
+  <hr>
+  <% end %>
+</ul>

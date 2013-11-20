@@ -1,0 +1,4 @@
+<h1>You made a mistake about your cat? Really?</h1>
+<form action="<%= cat_url(@cat) %>">
+  <input type="hidden" name="_method" value="put">
+  <%= render "cats_form" %>

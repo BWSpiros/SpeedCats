@@ -1,0 +1,6 @@
+<h1><%= @cat.name %></h1>
+<% @cat.attributes.each do |k, v| %>
+<p>
+  <%= "#{k}: #{v}"  %>
+</p>
+<% end %>
